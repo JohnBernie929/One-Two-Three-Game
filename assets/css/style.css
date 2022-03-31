@@ -10,6 +10,7 @@ body {
   height: 100%;
   display: flex;
   justify-content: center;
+  box-sizing: border-box;
   align-items: center;
   background-color: #03071e;
 }
@@ -35,8 +36,29 @@ body {
   --color: #0077b6;
 }
 
+#main header {
+  color: var(--color);
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
 .player i {
   cursor: pointer;
+}
+
+.rock,
+.paper,
+.scissors {
+  font-size: 50px;
+  padding: 10px;
+}
+
+.active {
+  color: var(--color);
+  border: 5px solid var(--color);
+  border-radius: 10px;
 }
 
 .game-message {
@@ -68,24 +90,4 @@ body {
 .start-btn {
   color: #03045e;
   background-color: #f72585;
-}
-
-#main header {
-  color: var(--color);
-  text-align: center;
-  font-size: 25px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.rock,
-.paper,
-.scissors {
-  font-size: 50px;
-  padding: 10px;
-}
-
-.active {
-  border: 5px solid var(--color);
-  border-radius: 10px;
 }
